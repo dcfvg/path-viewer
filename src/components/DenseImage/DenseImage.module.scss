@@ -1,11 +1,25 @@
-img {
-  width: calc(100vh / 3);
-  height: auto;
-  opacity: 0.4;
+@media print {
+  @page {
+    size: 3000mm 200mm;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
 }
 
+img {
+  width:  70mm;
+  height: 70mm;
+}
+
+.stretch img {
+  width: calc(200mm / 50);
+}
 .container {
   position: relative;
+  float: left;
 }
 
 .bboxContainer {
@@ -25,10 +39,15 @@ img {
   font-size: 10px;
 }
 
+
+.userSelectedObject {
+  display: none;
+}
+
 .objRect {
   fill: transparent;
   stroke: white;
-  stroke-width: 5;
+  stroke-width: 10;
   cursor: pointer;
 }
 

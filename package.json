@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://uf0.github.io/path-viewer",
   "dependencies": {
+    "@react-pdf/renderer": "^1.6.8",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "d3-array": "^2.3.1",
@@ -13,6 +14,7 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
+    "react-to-pdf": "0.0.8",
     "reactstrap": "^8.0.1"
   },
   "scripts": {

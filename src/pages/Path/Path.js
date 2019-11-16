@@ -29,26 +29,22 @@ const Path = props => {
 
   return (
     <div className="d-flex h-100">
-      {steps.map((step, i) => {
+      {
+        steps.map((step, i) => {
+          console.log(i);
         return (
           <div key={i} className="h-100 d-flex flex-column">
             <DenseImage
               filename={step[1][1].filename}
               path={props.match.params.id}
               objects={step[1][1].results}
-              rotated
-            ></DenseImage>
-
-            <DenseImage
-              filename={step[1][0].filename.replace("left", "up")}
-              path={props.match.params.id}
-              rotated
             ></DenseImage>
 
             <DenseImage
               filename={step[1][0].filename}
               path={props.match.params.id}
               objects={step[1][0].results}
+              rotated
             ></DenseImage>
           </div>
         );
